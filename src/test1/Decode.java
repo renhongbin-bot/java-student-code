@@ -28,17 +28,11 @@ public class Decode {
             }
         }
 //
+        int psw = 0;
         for (int i = 0; i < encArr.length; i++) {
-            System.out.println(encArr[i]);
-            if(encArr[i] > 5) {
-               encArr[i] = (encArr[i] + 5) % 10;
-            } else {
-                encArr[i] = encArr[i] % 10;
-            }
+            encArr[i] = (encArr[i] + 5) % 10;
+            psw = psw * 10 + encArr[i];
         }
-
-        for (int i = 0; i < encArr.length; i++) {
-            System.out.println(encArr[i]);
-        }
+        System.out.println(psw);
     }
 }

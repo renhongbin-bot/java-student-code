@@ -7,9 +7,6 @@ public class CloneArray {
         for (int i = 0; i < arr.length; i++) {
             copyArr[i] = arr[i];
         }
-
-
-
         for (int i = 0; i < copyArr.length; i++) {
             System.out.println(copyArr[i]);
         }

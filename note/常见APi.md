@@ -103,4 +103,35 @@ Calender是一个抽象类,不能new实例,只能通过getInstance()获取
 - ```public void set(int field, int value)```:修改日历中某个字段信息
 - ```public void add(int field, int amount)```:为某个字段增加/减少指定的值
 
-###JDK 8中的时间类(自己搜)
+### JDK 8中的时间类(自己搜)
+
+### 包装类
+用一个对象,把基本数据类型包起来
+byte ---> Byte
+short ---> Short
+char ---> Character
+int ---> Integer
+long ---> Long
+float ---> Float
+double ---> Double
+boolean ---> Boolean
+
+自动装箱和自动拆箱
+- 自动装箱:把基本数据类型会自动变为其对应包装类
+- 自动拆箱:把包装类变成基本数据类型
+```Integer i= 10```
+方法:
+- ```public static String toBinaryString(int i)```:得到二进制
+- ```public static String toOctalString(int i)```:得到八进制
+- ```public static String toHexString(int i)```:得到十六进制
+- ```public static int parseInt(String s)```:将字符串类型的整数转为int类型的整数
+
+### Lambda表达式
+Lambda表达式是JDK8开始的一种新语法
+- 注意:Lambda表达式可以用来简化匿名内部类的书写
+- Lambda表达式只能简化函数接口的匿名内部类的写法
+- 函数式接口:
+  - 有且仅有一个抽象方法的接口叫做函数式接口,接口上方可以通过@FunctionalInterface注解
+
+好处:
+- 更简洁,更灵活,是java语言能力得到了提升
